@@ -119,10 +119,7 @@ section{
     background-color: white;
     color: var(--background);
 }
-.btn-box .btn:nth-of-type(2):hover{
-    background-color: var(--background);
-    color: white;
-}
+
 .btn-box .btn a{
     color: white;
 }
