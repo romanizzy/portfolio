@@ -123,6 +123,9 @@ section{
     background-color: var(--background);
     color: white;
 }
+.btn-box .btn a{
+    color: white;
+}
 
 ::-webkit-scrollbar{
     width: 20px;
