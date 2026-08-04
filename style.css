@@ -115,11 +115,6 @@ section{
     display: flex;
     gap: 1em;
 }
-.btn-box .btn:nth-of-type(2){
-    background-color: white;
-    color: var(--background);
-}
-
 .btn-box .btn a{
     color: white;
 }
