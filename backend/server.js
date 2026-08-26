@@ -19,4 +19,14 @@ app.listen(PORT, () => {
 app.post("/api/contact", (req, res) => {
     const { name, email, message } = req.body;
 
-    const
+    console.log("New contact submission:");
+    console.log('Name:', name);
+    console.log('Email:', email);
+    console.log('Message:', message);
+
+    res.json({
+        sucess: true,
+        message: "Your message has been received!"
+    });
+});
+
