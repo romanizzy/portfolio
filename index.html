@@ -122,10 +122,12 @@
             <div class="box">
                 <h1><span>Post Graduate</span></h1>
 
-                <p>Lorem ipsim dolor sit amet consectetur, adipisicing elit. Debitis 
-                omnuus natus recusandae! Maiores numquam repellat quisquam cum
-                nulla minus minima fuga impedit ullam distinctio. Vel blanditiis
-                dicta commodi in cum.</p>
+                <p>In the current moment, Izabella is seeking a professional job and currating their portfolio. This includes creating 
+                    a website to showcase their skills and experience, as well as highlighting their research and projects.
+                    While looking to collaborate with other professionals in the field, they are seeking more graduate opportunities 
+                    in AI, Robotics, and Bioinformatics, and Biomedical Engineering. This is still a work in progress, but they are 
+                    excited to see where their career will take them.
+                </p>
                 <img src="graphic.jpg" alt="">
             </div>
         </div>
@@ -135,23 +137,38 @@
         
         <h1 class="header"><span>Contact</span></h1>
 
-        <form action="#">
+        <form id="contact-form">
             <div class="input-box">
                 <span>Full Name</span>
-                <input type="text" placeholder="Enter Your Email">
+                <input type="text"
+                       id="name" 
+                       name="name"
+                       placeholder="Enter Your Full Name"
+                       required>
             </div>
 
             <div class="input-box">
                 <span>Your Email</span>
-                <input type="text" placeholder="Enter Your Full Name">
+                <input type="text" 
+                       id="email"
+                       name="email"
+                       placeholder="Enter Your Email"
+                       required>
             </div>
 
             <div class="input-box">
                 <span>Your Message</span>
-                <input type="text" placeholder="Enter Your Message">
+                <input type="text"
+                       id="message"
+                       name="message"
+                       placeholder="Enter Your Message"
+                       required>
             </div>
 
-            <div class="btn">Submit</div>
+            <button type="submit" class="btn">Submit</button>
+
+            <p id="form-status"></p>
+
         </form>
     </section>
 
@@ -174,10 +191,11 @@
         </div>
         <div class="col-right">
             <span>About My Services</span>
-            <p>Lorem ipsim dolor sit amet consectetur, adipisicing elit. Debitis 
-            omnuus natus recusandae! Maiores numquam repellat quisquam cum
-            nulla minus minima fuga impedit ullam distinctio. Vel blanditiis
-            dicta commodi in cum.</p>
+            <p>At the moment, Izabella is seeking RGV brands, companies, and businesses to build websites for.
+                You can reach her through this website and inquire about getting a website customized for your 
+                business. She is also seeking to collaborate with other professionals in her field, so if you
+                have questions or want to collaborate, please feel free to reach out.
+            </p>
             
             <div class="social-icons">
                 <span><i class='bx bxl-linkedin' ></i></span>

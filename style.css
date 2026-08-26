@@ -118,7 +118,6 @@ section{
 .btn-box .btn a{
     color: white;
 }
-
 ::-webkit-scrollbar{
     width: 20px;
     background-color: var(--background);
