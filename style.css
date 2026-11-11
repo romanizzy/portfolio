@@ -309,6 +309,9 @@ footer{
     justify-content: left;
     gap: 1em;
 }
+.col-right .social-icons a{
+    text-decoration: none
+}
 .col-right .social-icons i{
     font-size: 2em;
     transition: 0.2s ease-in-out;
