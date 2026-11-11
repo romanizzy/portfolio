@@ -7,7 +7,7 @@ menu.onclick = () => {
 }
 
 const contactForm = document.getElementById("contact-form");
-const formStatus = document.getElementById("form-stats");
+const formStatus = document.getElementById("form-status");
 
 contactForm.addEventListener("submit", async (event) => {
 
@@ -16,6 +16,13 @@ contactForm.addEventListener("submit", async (event) => {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
+
+    console.log("Submitting form...");
+    console.log({
+        name,
+        email,
+        message
+    });
 
     formStatus.textContent = "Sending...";
 
@@ -43,5 +50,6 @@ contactForm.addEventListener("submit", async (event) => {
 
     } catch (error) {
         console.error("Error:", error);
+        formStatus.textContent = "Unable to connect to the server.";
     }
 });

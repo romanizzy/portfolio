@@ -1,11 +1,12 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
 const PORT = 3000;
 
 app.use(express.json());
 
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, '../')));
 
 app.get("/", (req, res) => {
     res.json({ 
@@ -27,7 +28,7 @@ app.post("/api/contact", (req, res) => {
     console.log('Message:', message);
 
     res.json({
-        sucess: true,
+        success: true,
         message: "Your message has been received!"
     });
 });
