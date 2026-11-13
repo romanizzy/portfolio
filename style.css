@@ -305,7 +305,7 @@ footer{
 }
 .col-right .social-icons{
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: left;
     gap: 1em;
 }
