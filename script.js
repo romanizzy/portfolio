@@ -18,6 +18,7 @@ contactForm.addEventListener("submit", async (event) => {
     const message = document.getElementById("message").value;
 
     console.log("Submitting form...");
+    
     console.log({
         name,
         email,
@@ -27,7 +28,7 @@ contactForm.addEventListener("submit", async (event) => {
     formStatus.textContent = "Sending...";
 
     try {
-        const response = await fetch("http://localhost:3000/api/contact", {
+        const response = await fetch("/api/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -41,11 +42,11 @@ contactForm.addEventListener("submit", async (event) => {
 
         const data = await response.json();
 
-        if(data.success) {
+        if(response.ok && data.success) {
             formStatus.textContent = "Message sent successfully!";
             contactForm.reset();
         } else {
-            formStatus.textContent = "Something went wrong.";
+            formStatus.textContent = data.message || "Something went wrong.";
         }
 
     } catch (error) {
