@@ -310,10 +310,16 @@ footer{
     gap: 1em;
 }
 .col-right .social-icons a{
-    text-decoration: none
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
 }
 .col-right .social-icons i{
+    display: block;
     font-size: 2em;
+    line-height: 1;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
